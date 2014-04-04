@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flyveklubbaggrund"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textWindSpeed"
+        android:layout_below="@+id/textWindSpeed"
+        android:text="@string/temperature_eng"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textStyle="bold"
+        android:shadowColor="#000000"  
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1"
+        android:width="170dp" />
+
+    <TextView
+        android:id="@+id/textDewPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textTemperature"
+        android:layout_below="@+id/textTemperature"
+        android:text="@string/dew_point_eng"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textStyle="bold"
+        android:shadowColor="#000000"  
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1"
+        android:width="170dp" />
+
+    <TextView
+        android:id="@+id/textPressureQFE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textDewPoint"
+        android:layout_below="@+id/textDewPoint"
+        android:text="@string/air_pressure_qfe_eng"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textStyle="bold"
+       	android:shadowColor="#000000"  
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1"
+        android:width="170dp" />
+
+    <TextView
+        android:id="@+id/textCloudbase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textPressureQFE"
+        android:layout_below="@+id/textPressureQFE"
+        android:text="@string/cloudbase_eng"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textStyle="bold"
+       	android:shadowColor="#000000"  
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1"
+        android:width="170dp" />
+
+    <TextView
+        android:id="@+id/textWindSpeedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textTemperature"
+        android:layout_alignLeft="@+id/textWindDirectionValue"
+        android:text="@string/not_available"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textStyle="bold"
+        android:shadowColor="#000000"  
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1" />
+
+    <TextView
+        android:id="@+id/textTemperatureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textTemperature"
+        android:layout_alignBottom="@+id/textTemperature"
+        android:layout_alignLeft="@+id/textWindSpeedValue"
+        android:text="@string/not_available"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textStyle="bold"
+        android:shadowColor="#000000"  
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1" />
+
+    <TextView
+        android:id="@+id/textDewPointValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textPressureQFE"
+        android:layout_alignLeft="@+id/textTemperatureValue"
+        android:text="@string/not_available"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textStyle="bold"
+        android:shadowColor="#000000"  
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1" />
+
+    <TextView
+        android:id="@+id/textCloudbaseValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textCloudbase"
+        android:layout_alignBottom="@+id/textCloudbase"
+        android:layout_alignLeft="@+id/textPressureQFEValue"
+        android:text="@string/not_available"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textStyle="bold"
+        android:shadowColor="#000000"  
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1" />
+
+    <TextView
+        android:id="@+id/textTimeOfUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textCloudbase"
+        android:layout_below="@+id/textCloudbase"
+        android:layout_marginTop="26dp"
+        android:text="@string/time_of_update_eng"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textStyle="bold"
+        android:shadowColor="#000000"  
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1"
+        android:width="170dp" />
+
+    <TextView
+        android:id="@+id/textTimeOfUpdateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textTimeOfUpdate"
+        android:layout_alignLeft="@+id/textCloudbaseValue"
+        android:layout_marginLeft="0dp"
+        android:text="@string/not_available"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textStyle="bold"
+        android:shadowColor="#000000"  
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1" />
+
+    <TextView
+        android:id="@+id/textWindDirectionValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textWindSpeedValue"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/textPressureQFE"
+        android:text="@string/not_available"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textStyle="bold" 
+        android:shadowColor="#000000"  
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1"/>
+
+    <TextView
+        android:id="@+id/textWindSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textWindDirection"
+        android:layout_below="@+id/textWindDirection"
+        android:text="@string/wind_speed_eng"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textStyle="bold"
+        android:width="170dp" 
+        android:shadowColor="#000000"  
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1"/>
+
+    <TextView
+        android:id="@+id/textPressureQFEValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textCloudbaseValue"
+        android:layout_alignLeft="@+id/textDewPointValue"
+        android:text="@string/not_available"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textStyle="bold"
+        android:shadowColor="#000000"  
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1" />
+
+    <TextView
+        android:id="@+id/textWindDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:text="@string/wind_direction_eng"
+        android:textAppearance="?android:attr/textAppearanceLargeInverse"
+        android:textStyle="bold"
+        android:shadowColor="#000000"  
+        android:shadowRadius="1.5"  
+        android:shadowDx="1"  
+        android:shadowDy="1"
+        android:width="170dp" />
+
+</RelativeLayout>

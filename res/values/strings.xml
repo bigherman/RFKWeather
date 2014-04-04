@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Randers Weather</string>
+    <string name="action_english">English</string>
+    <string name="action_danish">Dansk</string>
+    <string name="action_help_eng">Help</string>
+    <string name="action_help_dan">Hjælp</string>
+    <string name="wind_direction_eng">Wind Direction:</string>
+    <string name="wind_speed_eng">Wind Speed:</string>
+    <string name="temperature_eng">Temperature:</string>
+    <string name="dew_point_eng">Dew Point:</string>
+    <string name="air_pressure_qfe_eng">Pressure (QFE):</string>
+    <string name="cloudbase_eng">Cloudbase:</string>
+    <string name="time_of_update_eng">Last updated:</string>
+    <string name="time_expired_eng">Expired</string>
+    <string name="not_available">--</string>
+    <string name="failure_message_eng">Weather information not available at this time</string>
+    <string name="help_text_eng">Data in this app is provided from Randers Airfield\'s automatic weather station and is for information only.\nPlease consult other sources of weather information to complete your flight planning process.\nRanders Flyveklub accepts no responsibility for use of this product.</string><string name="randers_weather_server">http://www.randersflyveklub.dk/vejr/clientraw.txt</string>
+    <string name="wind_direction_dan">Vind Retning: </string>
+    <string name="wind_speed_dan">Vind Hastighed:  </string>
+    <string name="temperature_dan">Temperatur: </string>
+    <string name="dew_point_dan">Dugpunkt: </string>
+    <string name="air_pressure_qfe_dan">Lufttryk (QFE): </string>
+    <string name="cloudbase_dan">Skyhøjde: </string>
+    <string name="time_of_update_dan">Sidst opdateret:  </string>
+    <string name="failure_message_dan">Vejr information ikke tilgængelig lige nu</string>
+    <string name="time_expired_dan">Udløbt</string>
+    <string name="help_text_dan">Data i denne app er kun til information.\nBrug venligst andre kilder til at gennemføre din flyplanlægningsprocess.\nRanders Flyveklub fraskriver sig ethvert ansvar for brug af dette produkt.</string><string name="title_activity_help">Randers Weather - Help</string>
+    <string name="action_settings">Settings</string>
+</resources>
